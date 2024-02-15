@@ -2,44 +2,118 @@
 <html>
 
 <head>
+  <style>
 
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
+    }
+
+    body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #faeee7;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .banner-image {
+      width: 128px;
+      height: 170px;
+      border-radius: 100px;
+      border: solid black;
+      object-fit: cover;
+    }
+ 
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+
+    .name {
+      color: #594a4e;
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .social-icons a {
+      color: #594a4e;
+      text-decoration: none;
+    }
+
+    .links {
+      background-color: #ff8ba7;
+      display: flex;
+      align-items: center;
+    }
+
+    .links a {
+      color: #fffffe;
+      text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
+
+    * {
+      border: thin red solid;
+    }
+
+  </style>
 </head>
 
 <body>
-  <div class="banner">
-    <img src="jt picture.jpg">
-  </div>
 
-  <div>
-    Jeremy Baxter (jt)
-  </div>
+  <div class="items">
 
-  <div class="thumbnails">
-    <a href="https://github.com/jt-is-coding" target="_blank">
-      GitHub
-    </a>
+    <div class="banner">
+      <img src="jt picture.jpg" class="banner-image">
+    </div>
 
-    <a href="https://steamcommunity.com/profiles/76561197994132959/" target="_blank">
-      Steam
-    </a>
-  </div>
+    <div class="name">
+      Jeremy Baxter (jt)
+    </div>
 
-  <div class="links">
+   <div class="social-icons">
+     <a href="https://github.com/jt-is-coding" target="_blank">
+       GitHub
+      </a>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/OOIOO.jpg">
+     <a href="https://steamcommunity.com/profiles/76561197994132959/" target="_blank">
+       Steam
+      </a>
+    </div>
 
-    <a href="https://music.youtube.com/playlist?list=OLAK5uy_ny-fgDMmmnftCF8Eg8C6ElzRNSCTj8O0M" taget="_blank">
-      Album I recommend!
-    </a>
-  </div>
+    <div class="links">
+      <img src="https://upload.wikimedia.org/wikipedia/en/1/1a/OOIOO_-_Armonica_Hewa.jpg" class="thumbnail">
 
-  <div class="links">
-    
-    <img src="/thumbnails/OYH.png">
+      <a href="https://music.youtube.com/playlist?list=OLAK5uy_ny-fgDMmmnftCF8Eg8C6ElzRNSCTj8O0M" taget="_blank">
+       Album I recommend!
+      </a>
+    </div>
 
-    <a href="https://store.steampowered.com/app/1708200/On_Your_Hands/" target="_blank">
-      Last game I played!
-    </a>
+    <div class="links">
+      <img src="/thumbnails/skeleton studios.png" class="thumbnail">
+
+      <a href="https://store.steampowered.com/app/1708200/On_Your_Hands/" target="_blank">
+       Last game I played!
+      </a>
+    </div>
+
   </div>
 
 
